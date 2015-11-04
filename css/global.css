@@ -1,0 +1,214 @@
+.gap {
+  position: absolute;
+  width: 100%;
+  height: 2000px;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.BG_Red_01 {
+  background-color: #820509;
+}
+
+.BG_Red_02 {
+  background-color: #C11515;
+}
+
+.BG_Orange_01 {
+  background-color: #FF8C3C;
+}
+
+.BG_Orange_02 {
+  background-color: #FFB44E;
+}
+
+.BG_Cream_01 {
+  background-color: #FFFBD7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto 0 auto;
+}
+
+h1 {
+  font-family: Source Sans Pro, sans-serif;
+  text-transform: capitalize;
+  font-size: 55px;
+  font-weight: 300;
+}
+
+h2 {
+  font-family: Patrick Hand, cursive;
+}
+
+#header_container {
+  position: relative;
+  height: 700px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #ED5050;
+}
+
+.logo {
+  height: 400px;
+  width: 100%;
+  background-image: url(../img/name.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  margin-top: -200px;
+}
+
+.header_back {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top center;
+  background-attachment: fixed;
+  text-align: center;
+  overflow: hidden;
+}
+.header_back img {
+  height: auto;
+  width: 130%;
+  margin-left: -15%;
+}
+
+.intro {
+  width: 70%;
+  height: auto;
+  padding: 4% 15% 2% 15%;
+  text-align: justify;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow-x: hidden;
+  margin-top: -5%;
+}
+
+.container_content {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 5% 0 5% 0;
+}
+.container_content .title {
+  width: auto;
+  height: auto;
+  margin: 0 auto 0 auto;
+  position: relative;
+  text-align: center;
+}
+
+.angle_right {
+  position: relative;
+  height: 100px;
+  width: 200%;
+  margin: -63px 0 0 -30px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: rotate(2.5deg);
+  -moz-transform: rotate(2.5deg);
+  -o-transform: rotate(2.5deg);
+  -ms-transform: rotate(2.5deg);
+  transform: rotate(2.5deg);
+  z-index: 1;
+}
+
+.angle_left {
+  position: relative;
+  height: 100px;
+  width: 200%;
+  margin: -63px 0 0 -30px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: rotate(-2.5deg);
+  -moz-transform: rotate(-2.5deg);
+  -o-transform: rotate(-2.5deg);
+  -ms-transform: rotate(-2.5deg);
+  transform: rotate(-2.5deg);
+  z-index: 1;
+}
+
+.angle_right_bottom {
+  position: relative;
+  height: 100px;
+  width: 200%;
+  margin: 0 0 0 -30px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: rotate(2.5deg);
+  -moz-transform: rotate(2.5deg);
+  -o-transform: rotate(2.5deg);
+  -ms-transform: rotate(2.5deg);
+  transform: rotate(2.5deg);
+  z-index: 1;
+}
+
+.angle_left_bottom {
+  position: relative;
+  height: 100px;
+  width: 200%;
+  margin: 0 0 0 -30px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  -ms-transform-origin: left center;
+  transform-origin: left center;
+  -webkit-transform: rotate(-2.5deg);
+  -moz-transform: rotate(-2.5deg);
+  -o-transform: rotate(-2.5deg);
+  -ms-transform: rotate(-2.5deg);
+  transform: rotate(-2.5deg);
+  z-index: 1;
+}
+
+@media (min-width: 800px) {
+  .desk_hide {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .header_back img {
+    height: auto;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .mob_hide {
+    display: none;
+  }
+
+  height: 200px;
+  width: 100%;
+  background-image: url(../img/name.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  margin-top: -100px;
+}

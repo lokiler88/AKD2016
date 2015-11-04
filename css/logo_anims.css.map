@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,EAAE;EACD,cAAc,EAAE,gBAAgB;;;;EAGhC,SAAS,EAAE,QAAQ",
+"sources": ["logo_anims.sass"],
+"names": [],
+"file": "logo_anims.css"
+}

@@ -1,0 +1,221 @@
+//COLORS
+$Ctest1: #ED5050
+$Ctest2: #2c6cb0
+
+//COLORS
+$Red_01: #820509
+$Red_02: #C11515
+$Orange_01: #FF8C3C
+$Orange_02: #FFB44E
+$Cream_01: #FFFBD7
+$white : #ffffff
+
+//POSITIONS
+$abso: absolute
+$rel: relative
+$MargAuto: 0 auto 0 auto
+
+//TESTING TOOLS
+.gap
+	position: $abso
+	width: 100%
+	height: 2000px
+
+//BG_COLORS:
+.white
+	color: $white
+.BG_Red_01
+	background-color: $Red_01
+.BG_Red_02
+	background-color: $Red_02
+.BG_Orange_01
+	background-color: $Orange_01
+.BG_Orange_02
+	background-color: $Orange_02
+.BG_Cream_01
+	background-color: $Cream_01
+
+//FONTS
+$sans_pro: Source Sans Pro, sans-serif
+$hand: Patrick Hand, cursive
+
+//global atrribures
+*
+	margin: 0
+	padding: 0
+
+body
+	//max-width: 1800px
+	margin: 0 auto 0 auto
+
+h1
+
+	font-family: $sans_pro
+	text-transform: capitalize 
+	font-size: 55px
+	font-weight: 300
+
+h2
+
+	font-family: $hand
+
+//header section//
+#header_container
+	position: $rel
+	height: 700px
+	width: 100%
+	overflow: hidden
+	background-color: $Ctest1
+
+.logo
+	height: 400px
+	width: 100%
+	background:
+		image: url(../img/name.gif)
+		position: center
+		repeat: no-repeat
+		size: contain
+
+	position: $abso
+	top: 50%
+	margin-top: -200px
+
+.header_back
+	position: $rel
+	height: 100%
+	width: 100%
+	background:
+		repeat: no-repeat
+		size: 100%
+		position: top center
+		attachment: fixed
+	text-align: center
+	overflow: hidden
+
+	img
+		height: auto
+		width: 130%
+		margin-left: -15%
+
+.intro
+	width: 70%
+	height: auto
+	padding: 4% 15% 2% 15%
+	text-align: justify
+
+.container
+	width: 100%
+	height: auto
+	position: $rel
+	overflow-x: hidden
+	//background-color: $Ctest1
+	margin-top: -5%
+
+.container_content
+	position: $rel
+	height: auto
+	width: 100%
+	padding: 5% 0 5% 0
+
+
+	.title
+		width: auto
+		height: auto
+		margin: $MargAuto
+		position: $rel
+		text-align: center
+
+.angle_right
+	position: $rel
+	height: 100px
+	width: 200%
+	margin: -63px 0 0 -30px
+	-webkit-transform-origin: left center
+	-moz-transform-origin: left center
+	-o-transform-origin: left center
+	-ms-transform-origin: left center
+	transform-origin: left center
+	-webkit-transform: rotate(2.5deg)
+	-moz-transform: rotate(2.5deg)
+	-o-transform: rotate(2.5deg)
+	-ms-transform: rotate(2.5deg)
+	transform: rotate(2.5deg)
+	z-index: 1
+
+.angle_left
+	position: $rel
+	height: 100px
+	width: 200%
+	margin: -63px 0 0 -30px
+	-webkit-transform-origin: left center
+	-moz-transform-origin: left center
+	-o-transform-origin: left center
+	-ms-transform-origin: left center
+	transform-origin: left center
+	-webkit-transform: rotate(-2.5deg)
+	-moz-transform: rotate(-2.5deg)
+	-o-transform: rotate(-2.5deg)
+	-ms-transform: rotate(-2.5deg)
+	transform: rotate(-2.5deg)
+	z-index: 1
+
+.angle_right_bottom
+	position: $rel
+	height: 100px
+	width: 200%
+	margin: 0 0 0 -30px
+	-webkit-transform-origin: left center
+	-moz-transform-origin: left center
+	-o-transform-origin: left center
+	-ms-transform-origin: left center
+	transform-origin: left center
+	-webkit-transform: rotate(2.5deg)
+	-moz-transform: rotate(2.5deg)
+	-o-transform: rotate(2.5deg)
+	-ms-transform: rotate(2.5deg)
+	transform: rotate(2.5deg)
+	z-index: 1
+
+.angle_left_bottom
+	position: $rel
+	height: 100px
+	width: 200%
+	margin: 0 0 0 -30px
+	-webkit-transform-origin: left center
+	-moz-transform-origin: left center
+	-o-transform-origin: left center
+	-ms-transform-origin: left center
+	transform-origin: left center
+	-webkit-transform: rotate(-2.5deg)
+	-moz-transform: rotate(-2.5deg)
+	-o-transform: rotate(-2.5deg)
+	-ms-transform: rotate(-2.5deg)
+	transform: rotate(-2.5deg)
+	z-index: 1
+
+@media (min-width: 800px)
+	.desk_hide
+		display: none
+
+@media (max-width: 800px)
+
+	.header_back
+		img
+			height: auto
+			width: 100%
+			margin-left: 0
+	.mob_hide
+		display: none
+
+	.logo
+	height: 200px
+	width: 100%
+	background:
+		image: url(../img/name.png)
+		position: center
+		repeat: no-repeat
+		size: contain
+
+	position: $abso
+	top: 50%
+	margin-top: -100px
